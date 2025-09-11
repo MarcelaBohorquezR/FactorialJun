@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="test" type="JUnit" factoryName="JUnit">
+    <module name="FactorialJun" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="org.example.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="org.example" />
+    <option name="MAIN_CLASS_NAME" value="org.example.FactorialTest" />
+    <option name="METHOD_NAME" value="testFactorialOfTen" />
+    <option name="TEST_OBJECT" value="method" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
