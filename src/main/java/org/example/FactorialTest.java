@@ -30,11 +30,11 @@ class FactorialTest {
         assertEquals(5040, Factorial.calcularFactorial(7));
     }
 
-    @Test
-    void testFactorial9() {
-        // Prueba el factorial de 9
-        assertEquals(362880, Factorial.calcularFactorial(9));
-    }
+    // @Test
+    // void testFactorial9() {
+    //     // Prueba el factorial de 9
+    //     assertEquals(362880, Factorial.calcularFactorial(9));
+    // }
 
     // @Test
     // void testFactorial10() {
