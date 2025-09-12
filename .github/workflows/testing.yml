@@ -9,7 +9,6 @@ on:
         type: choice
         default: '17'
         options:
-          - '13'
           - '14'
           - '17' # Opción por defecto recomendada
       
