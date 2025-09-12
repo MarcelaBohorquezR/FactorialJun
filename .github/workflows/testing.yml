@@ -17,8 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Verificar Parámetros de Entrada
-      run: echo "La versión de JDK seleccionada es: ${{ github.event.inputs.jdk_version }}"
     - name: Checkout del código
       uses: actions/checkout@v4
       
