@@ -1,4 +1,4 @@
-name: Java CI - Maven 2
+name: Java CI - Maven v2
 
 on:
   push:
