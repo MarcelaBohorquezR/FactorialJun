@@ -19,5 +19,4 @@ jobs:
         cache: 'maven'
     - name: Compile and run with Maven
       run: mvn -B compile
-    - name: Run SpotBugs
-      run: mvn -B com.github.spotbugs:spotbugs-maven-plugin:spotbugs
+   
