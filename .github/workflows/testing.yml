@@ -1,0 +1,41 @@
+name: Análisis de Código Java con SpotBugs (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      jdk_version:
+        description: 'Versión de JDK a usar (13 o 14)'
+        required: true
+        type: choice
+        default: '17'
+        options:
+          - '13'
+          - '14'
+          - '17' # Opción por defecto recomendada
+      
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v4
+      
+    - name: Configurar JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: ${{ github.event.inputs.jdk_version }}
+        distribution: 'temurin'
+        cache: 'maven' # O 'gradle', 'sbt' si usas esos gestores de dependencias
+
+    - name: Compilar el proyecto con Maven
+      run: mvn clean install -DskipTests
+
+    - name: Ejecutar SpotBugs
+      run: mvn com.github.spotbugs:spotbugs-maven-plugin:spotbugs
+      
+    - name: Subir informe de SpotBugs
+      uses: actions/upload-artifact@v4
+      with:
+        name: spotbugs-report
+        path: target/spotbugsXml.xml
