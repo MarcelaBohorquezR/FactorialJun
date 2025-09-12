@@ -1,4 +1,4 @@
-name: Java CI - Maven - Spotbugs
+name: Java CI - Maven - Spotbugs v1
 on:
   push:
     branches: [ main ]
