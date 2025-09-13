@@ -1,5 +1,5 @@
 name: Java CI - Maven v3
-#cuando se debe ejecutar nuestro flujo
+#cuando se debe ejecutar nuestro
 on:
   push:
     branches: [ main ]
