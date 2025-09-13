@@ -1,4 +1,4 @@
-name: Análisis de Código Java con SpotBugs (Manual)
+name: Análisis de Código Java con SpotBugs (Manual) v1
 
 on:
   workflow_dispatch:
